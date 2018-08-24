@@ -14,7 +14,7 @@ PROJECT_ROOT = File.dirname(CONFIG_PATH)
 
 build_output_keys = CONFIG['output']
 
-processor = TemplateProcessor.new(File.join([PROJECT_ROOT, CONFIG['source']]))
+processor = TemplateProcessor.new(File.join([PROJECT_ROOT, CONFIG['source']]), CONFIG['alias'])
 
 build_output_keys.each do |output_path|
   full_output_path = File.join([PROJECT_ROOT, CONFIG['dest'], output_path])

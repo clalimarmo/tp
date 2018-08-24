@@ -1,5 +1,7 @@
 source: src
-dest: build
+dest: build/prod
+alias:
+  env: aliases/env/prod
 output:
   - index.html
   - about.html

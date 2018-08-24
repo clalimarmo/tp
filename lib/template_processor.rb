@@ -1,9 +1,14 @@
 class TemplateProcessor
   attr_accessor :processed_templates
 
-  def initialize(source)
+  def initialize(source, template_aliases)
     @source = source
+    @template_aliases = template_aliases
     @processed_templates = {}
+
+    @template_aliases.each do |template_alias, template_path|
+      @processed_templates[template_alias] = process_template(template_path)
+    end
   end
 
   # return template with replacements, recurse and memoize templates as they are processed
