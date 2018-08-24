@@ -1,0 +1,5 @@
+source: src
+dest: build
+output:
+  - index.html
+  - about.html
