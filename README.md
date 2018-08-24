@@ -1,3 +1,3 @@
 # Template Processor
 
-Process templates wherein filepaths are replacement keys.
+Write files from templates using only file-based replacement.
